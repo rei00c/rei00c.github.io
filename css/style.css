@@ -1,11 +1,14 @@
 @charset "UTF-8";
 body {
-    background-color: #fffeee;
+    background-color: #333333;
     font-family: 'Teko', sans-serif;
 }
  h1 {
-    color: #00c;
+    color: #ffffff;
 } p{
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
