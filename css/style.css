@@ -37,6 +37,12 @@ h1 {
     font-family: 'Teko', sans-serif;
 }
 
+h2 {
+    font-size: xx-large;
+    font-family: 'Teko', sans-serif;
+    color: #ccff33;
+}
+
 p {
     font-size: small;
 }
