@@ -28,27 +28,27 @@ a:hover {
 
 li {
     list-style: none;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-family: 'Teko', sans-serif;
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: xxx-large;
     font-family: 'Teko', sans-serif;
 }
 
 h2 {
-    font-size: xx-large;
+    font-size: xxx-large;
     font-family: 'Teko', sans-serif;
     color: #ccff33;
 }
 
 p {
-    font-size: small;
+    font-size: medium;
 }
 
 small {
-    font-size: xx-small;
+    font-size: small;
 }
 
 /* 構造部
