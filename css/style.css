@@ -77,3 +77,20 @@ small {
     font-weight: normal;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    /* 画面サイズが600以下の場合に適用 */
+    body {
+        font-size: 3.5vw;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 9vw;
+    }
+    header {
+        width: auto;
+        margin: 0.5%;
+    }
+}
