@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>The End Date of Windows10</title>
+  <title>The End Date of Windows10</title>
+  <script src="js/theendwin10.js"></script>
+
 </head>
+
 <body>
-<h1>The End Date of Windows10</h1>
-<script src="js/theendwin10.js"></script>
+  <h1>The End Date of Windows10</h1>
+
+  <h2>計算結果</h2>
+  <p id="daysLeft"></p>
+  <script>
+    document.getElementById("daysLeft").innerHTML = (`Windows 10のサポート終了まであと${daysLeft}日です。`);
+  </script>
 </body>
+
 </html>
