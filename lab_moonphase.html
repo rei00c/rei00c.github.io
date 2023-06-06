@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moon Phase</title>
+</head>
+
+<body>
+
+  <h1>月齢</h1>
+  <h3>※注意：現在検証中</h3>
+  <p>現在の月齢は<span id="moonAge"></span>です。</p>
+
+  <script>
+    function getMoonAge() {
+      var today = new Date();
+      var newMoon = new Date('2023-06-10'); // 新月の日付を設定
+      var days = (today - newMoon) / 86400000; // 日数を求める
+      var moonAge = (days % 29.53).toFixed(2); // 月齢を計算する
+      return moonAge;
+    }
+
+    document.getElementById('moonAge').textContent = getMoonAge(); // HTMLに月齢を表示する
+  </script>
+</body>
+
+</html>
