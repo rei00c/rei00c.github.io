@@ -17,8 +17,9 @@
       var today = new Date();
       var newMoon = new Date('2023-06-10'); // 新月の日付を設定
       var days = (today - newMoon) / 86400000; // 日数を求める
-      var moonAge = (days % 29.53).toFixed(2); // 月齢を計算する
-      return moonAge;
+      var moonAge = (days / 29.53) % 1; // 月齢を計算する
+      var formattedMoonAge = Math.floor((moonAge * 100) + 10 ) / 10; //小数点一位まで表示する
+      return formattedMoonAge;
     }
 
     document.getElementById('moonAge').textContent = getMoonAge(); // HTMLに月齢を表示する
