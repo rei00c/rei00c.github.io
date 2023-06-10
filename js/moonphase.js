@@ -24,7 +24,7 @@ function calculateMoonAge() {
 }
 
 // ページが読み込まれたときに月齢を表示する関数を呼び出す
-window.onload = function() {
+window.onload = function () {
   var moonAgeElement = document.getElementById("moonAge");
   var moonAge = calculateMoonAge();
   moonAgeElement.innerHTML = moonAge.toFixed(1) + "日"; // 月齢を小数点第1位まで表示
