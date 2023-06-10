@@ -10,19 +10,40 @@
 
   <h1>月齢</h1>
   <h3>※注意：現在検証中</h3>
-  <p>現在の月齢は<span id="moonAge"></span>です。</p>
+  <p id="moonAge"></p>
 
   <script>
-    function getMoonAge() {
-      var today = new Date();
-      var newMoon = new Date('2023-06-10'); // 新月の日付を設定
-      var days = (today - newMoon) / 86400000; // 日数を求める
-      var moonAge = (days / 29.53) % 1; // 月齢を計算する
-      var formattedMoonAge = Math.floor((moonAge * 100) + 10 ) / 10; //小数点一位まで表示する
-      return formattedMoonAge;
+    // JavaScriptで月齢を計算する関数
+    function calculateMoonAge() {
+      // 現在の日付を取得
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = now.getMonth() + 1;
+      var day = now.getDate();
+
+      // ユリウス日の計算式を使用して日付を変換
+      var a = Math.floor((14 - month) / 12);
+      var y = year + 4800 - a;
+      var m = month + 12 * a - 3;
+      var jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+
+      // 2000年1月6日（ユリウス日=2451550.1）を起点として月齢を計算
+      var baseDate = new Date(2000, 0, 6);
+      var baseJulianDate = 2451550.1;
+      var daysSinceBase = (jd - baseJulianDate) + 0.5;
+
+      var synodicMonth = 29.53058867; // 月の平均の周期（日数）
+      var moonAge = (daysSinceBase % synodicMonth) / synodicMonth * 30; // 月齢を計算（近似値）
+
+      return moonAge;
     }
 
-    document.getElementById('moonAge').textContent = getMoonAge(); // HTMLに月齢を表示する
+    // ページが読み込まれたときに月齢を表示する関数を呼び出す
+    window.onload = function () {
+      var moonAgeElement = document.getElementById("moonAge");
+      var moonAge = calculateMoonAge();
+      moonAgeElement.innerHTML = moonAge.toFixed(1) + "日"; // 月齢を小数点第1位まで表示
+    };
   </script>
 </body>
 
