@@ -16,7 +16,7 @@ function getNewMoon(julian) {
   const nmoon =
     2451550.09765 +
     29.530589 * k +
-     0.0001337 * t * t -
+    0.0001337 * t * t -
     0.4072 * dsin(201.5643 + 385.8169 * k) +
     0.17241 * dsin(2.5534 + 29.1054 * k);
   return nmoon;
