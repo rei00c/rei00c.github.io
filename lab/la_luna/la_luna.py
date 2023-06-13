@@ -49,10 +49,11 @@ elif lDays == 15:
 elif lDays == 22 or lDays == 23:
     lStates = "下弦の月"
 else:
-    lStates = "&nbsp;"
+    # lStates = "&nbsp;"
+    lStates = ""
 
 # 日付、現在時刻、月齢を表示する
-print(f"{yyyy}/{mmdd}<BR>")
-print(f"{hhmm} 現在<BR>")
-print(f"{lStates}<BR>")
-print(f"月齢 {luna}日<BR>")
+print(f"{yyyy}/{mmdd}")
+print(f"{hhmm} 現在")
+print(f"{lStates}")
+print(f"月齢 {luna}日")
