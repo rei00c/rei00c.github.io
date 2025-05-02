@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>180日後の日付計算</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+		<script src="./js/180days.js"></script>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>180日後の日付計算</title>
-  <script src="./js/180days.js"></script>
-</head>
+	<body>
+		<header>
+			<h1>180日後の日付計算</h1>
+		</header>
+		<main>
+			<label for="input-date">指定日（年/月/日）:</label>
+			<input type="date" id="input-date" />
+			<button onclick="calculateDate()">計算</button>
 
-<body>
-  <h1>180日後の日付計算</h1>
-
-  <label for="input-date">指定日（年/月/日）:</label>
-  <input type="date" id="input-date">
-  <button onclick="calculateDate()">計算</button>
-
-  <div id="current-date"></div>
-  <div id="elapsed-days"></div>
-  <div id="future-date"></div>
-</body>
-
+			<div id="current-date"></div>
+			<div id="elapsed-days"></div>
+			<div id="future-date"></div>
+		</main>
+		<footer>
+			<p>&copy; 2025 ZeroFactory</p>
+		</footer>
+	</body>
 </html>

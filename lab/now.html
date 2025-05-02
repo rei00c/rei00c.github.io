@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Now</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Now</title>
-</head>
-
-<body>
-
-  <h1>ただいまの時刻</h1>
-
-  <div id="d2">&nbsp;</div>
-  <script>
-    setInterval(function () {
-      document.getElementById("d2").innerHTML = new Date().toLocaleString();
-    }, 1000);
-  </script>
-
-</body>
-
+	<body>
+		<header>
+			<h1>ただいまの時刻</h1>
+		</header>
+		<main>
+			<div id="d2">&nbsp;</div>
+			<script>
+				setInterval(function () {
+					document.getElementById('d2').innerHTML = new Date().toLocaleString();
+				}, 1000);
+			</script>
+		</main>
+		<footer>
+			<p>&copy; 2025 ZeroFactory</p>
+		</footer>
+	</body>
 </html>
