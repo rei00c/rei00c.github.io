@@ -3,107 +3,113 @@
 /* 共通部分
 ------------------------------- */
 html {
-    font-size: 100%;
+	font-size: 100%;
 }
 
 body {
-    background-color: #333333;
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-    color: #ffffff
+	background-color: #333333;
+	font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体',
+		'ヒラギノ角ゴ Pro W3', sans-serif;
+	color: #ffffff;
 }
 
 a {
-    text-decoration: none;
-    color: #cccccc;
-    transition: color .5s;
+	text-decoration: none;
+	color: #cccccc;
+	transition: color 0.5s;
 }
 
 a:visited {
-    color: #666666;
+	color: #666666;
 }
 
 a:hover {
-    color: #ff33cc;
+	color: #ff33cc;
 }
 
 li {
-    list-style: none;
-    font-size: xxx-large;
-    font-family: 'Teko', sans-serif;
+	list-style: none;
+	font-size: xxx-large;
+	font-family: 'Teko', sans-serif;
 }
 
 h1 {
-    font-size: xxx-large;
-    font-family: 'Teko', sans-serif;
+	font-size: xxx-large;
+	font-family: 'Teko', sans-serif;
 }
 
 h2 {
-    font-size: xx-large;
-    font-family: 'Teko', sans-serif;
-    color: #ccff33;
+	font-size: xx-large;
+	font-family: 'Teko', sans-serif;
+	color: #ccff33;
 }
 
 p {
-    font-size: medium;
+	font-size: medium;
 }
 
 small {
-    font-size: small;
+	font-size: small;
 }
 
 /* 追記
 ------------------------------- */
 #d2 {
-    font-family: 'Libre Barcode 39', cursive;
-    font-size: xx-large;
+	font-family: 'Libre Barcode 39', cursive;
+	font-size: xx-large;
 }
 
+summary {
+	list-style: none;
+}
 
+summary > h1:hover {
+	color: #ff33cc;
+}
 
 /* 構造部
 ------------------------------- */
 
 /* container */
 .wrapper {
-    width: 100%;
+	width: 100%;
 }
 
 .wrapper .container {
-    max-width: 1000px;
-    margin: 0px auto;
-    padding: 20px 0px;
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 20px 0px;
 }
 
 /* content */
 .wrapper .content {
-    padding: 10px;
-    text-align: center;
+	padding: 10px;
+	text-align: center;
 }
 
 .wrapper .content .heading {
-    margin: 0px 0px 0px 0px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
+	margin: 0px 0px 0px 0px;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
 }
 
 @media screen and (max-width: 600px) {
+	/* 画面サイズが600以下の場合に適用 */
+	body {
+		font-size: 3.5vw;
+	}
 
-    /* 画面サイズが600以下の場合に適用 */
-    body {
-        font-size: 3.5vw;
-    }
+	h1 {
+		font-size: 11vw;
+	}
 
-    h1 {
-        font-size: 11vw;
-    }
+	h2 {
+		font-size: 8vw;
+	}
 
-    h2 {
-        font-size: 8vw;
-    }
-
-    header {
-        width: auto;
-        margin: 0.5%;
-    }
+	header {
+		width: auto;
+		margin: 0.5%;
+	}
 }
