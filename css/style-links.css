@@ -65,6 +65,10 @@ td {
 	border: solid 1px #cccccc;
 	/* 枠線の下線の太さと色 */
 }
+td {
+	/* セルの内容を左寄せ */
+	text-align: left;
+}
 
 /* 背景色 */
 /* tr:nth-child(even) {
