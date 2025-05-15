@@ -1,8 +1,54 @@
+@charset "UTF-8";
+
 /* 共通部分
 ------------------------------- */
 html {
 	font-size: 100%;
 }
+
+body {
+	background-color: #ffffff;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+	color: #0076d1;
+	transition: color 0.5s;
+}
+
+a:visited {
+	color: #0076d1;
+}
+
+a:hover {
+	color: #ff33cc;
+}
+
+li {
+	/* list-style: none; */
+	font-size: medium;
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+p {
+	font-size: medium;
+}
+
+small {
+	font-size: small;
+}
+
+/* table設定
+------------------------------- */
 
 /* ストライプ */
 table {
@@ -14,13 +60,70 @@ table {
 
 th,
 td {
-	padding: 8px;
+	padding: 10px;
 	/* 余白 */
-	border-bottom: solid 1px #ddd;
+	border: solid 1px #cccccc;
 	/* 枠線の下線の太さと色 */
 }
 
 /* 背景色 */
-tr:nth-child(even) {
+/* tr:nth-child(even) {
 	background-color: #f2f2f2;
+} */
+
+/* 追記
+------------------------------- */
+/* summary {
+	list-style: none;
+}
+
+summary > h1:hover {
+	color: #ff33cc;
+} */
+
+/* 構造部
+------------------------------- */
+
+/* container */
+.wrapper {
+	width: 100%;
+}
+
+.wrapper .container {
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 20px 0px;
+}
+
+/* content */
+.wrapper .content {
+	padding: 10px;
+	text-align: center;
+}
+
+.wrapper .content .heading {
+	margin: 0px 0px 0px 0px;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	/* 画面サイズが600以下の場合に適用 */
+	body {
+		font-size: 3.5vw;
+	}
+
+	h1 {
+		font-size: 11vw;
+	}
+
+	h2 {
+		font-size: 8vw;
+	}
+
+	header {
+		width: auto;
+		margin: 0.5%;
+	}
 }
