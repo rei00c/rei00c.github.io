@@ -20,7 +20,7 @@ td {
 	/* 枠線の下線の太さと色 */
 }
 
+/* 背景色 */
 tr:nth-child(even) {
-	/* background-color: #f2f2f2; */
-	/* 背景色 */
+	background-color: #f2f2f2;
 }
