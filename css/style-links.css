@@ -47,34 +47,6 @@ small {
 	font-size: small;
 }
 
-/* table設定
-------------------------------- */
-
-/* ストライプ */
-table {
-	width: 100%;
-	/* 表の幅 */
-	border-collapse: collapse;
-	/* セルの枠線を重ねる */
-}
-
-th,
-td {
-	padding: 10px;
-	/* 余白 */
-	border: solid 1px #cccccc;
-	/* 枠線の下線の太さと色 */
-}
-td {
-	/* セルの内容を左寄せ */
-	text-align: left;
-}
-
-/* 背景色 */
-/* tr:nth-child(even) {
-	background-color: #f2f2f2;
-} */
-
 /* dl dt dd設定
 ------------------------------- */
 dl {
@@ -102,9 +74,6 @@ dd {
 
 /* 追記
 ------------------------------- */
-/* summary > h2:hover {
-	color: #ff33cc;
-} */
 
 /* 構造部
 ------------------------------- */
@@ -123,13 +92,17 @@ dd {
 /* content */
 .wrapper .content {
 	padding: 10px;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .wrapper .content .heading {
 	margin: 0px 0px 0px 0px;
 	font-size: 24px;
 	font-weight: normal;
+	text-align: center;
+}
+
+header footer {
 	text-align: center;
 }
 
@@ -150,5 +123,6 @@ dd {
 	header {
 		width: auto;
 		margin: 0.5%;
+		text-align: center;
 	}
 }
