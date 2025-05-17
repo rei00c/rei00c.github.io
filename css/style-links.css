@@ -119,7 +119,7 @@ footer {
 	text-align: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 	/* 画面サイズが600以下の場合に適用 */
 	body {
 		font-size: 3.5vw;
