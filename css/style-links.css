@@ -50,15 +50,26 @@ small {
 /* table設定
 ------------------------------- */
 table,
-td,
-th {
+th,
+td {
 	border: solid 1px #ccc;
 	border-collapse: collapse;
-}
-td,
-th {
 	padding: 10px;
-	/* width: 100%; */
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+	width: 160px;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+	width: 600px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+	width: 120px;
 }
 
 /* dl dt dd設定
