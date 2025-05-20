@@ -33,10 +33,13 @@ li {
 
 h1 {
 	font-size: xx-large;
+	margin: 0px;
 }
 
 h2 {
 	font-size: x-large;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 p {
