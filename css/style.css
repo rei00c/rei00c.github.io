@@ -94,7 +94,7 @@ summary > h1:hover {
 	text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
 	/* 画面サイズが600以下の場合に適用 */
 	body {
 		font-size: 3.5vw;
