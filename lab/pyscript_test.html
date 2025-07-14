@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>PyScript Test</title>
+		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-<head>
-  <meta charset="UTF-8">
-  <title>PyScript Test</title>
-  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-</head>
+			gtag('config', 'G-H6P772P58X');
+		</script>
+	</head>
 
-<body>
+	<body>
+		<h1>PyScriptのテスト</h1>
 
-  <h1>PyScriptのテスト</h1>
-
-  <py-script>
-    print('Hello, World!')
-  </py-script>
-
-</body>
-
+		<py-script> print('Hello, World!') </py-script>
+	</body>
 </html>
