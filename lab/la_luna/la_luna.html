@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>La luna -cuarto creciente-</title>
+		<script src="la_luna.js"></script>
+		<style>
+			body {
+				background-color: black;
+				color: white;
+			}
+		</style>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-<head>
-  <title>La luna -cuarto creciente-</title>
-  <script src="la_luna.js"></script>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-    }
-  </style>
-</head>
+			gtag('config', 'G-H6P772P58X');
+		</script>
+	</head>
 
-<body onload="calculateLuna()">
-  <center>
-    <table border="0">
-      <tr>
-        <td>
-          <font size="2">
-            <span id="date"></span><br>
-            <span id="time"></span> 現在<br>
-            <span id="lStates"></span><br>
-            <span id="lDays"></span><br>
-          </font>
-        </td>
-        <td><img id="moonImage" width="45" height="45" alt="月の画像"></td>
-      </tr>
-    </table>
-  </center>
-</body>
-
+	<body onload="calculateLuna()">
+		<center>
+			<table border="0">
+				<tr>
+					<td>
+						<font size="2">
+							<span id="date"></span><br />
+							<span id="time"></span> 現在<br />
+							<span id="lStates"></span><br />
+							<span id="lDays"></span><br />
+						</font>
+					</td>
+					<td><img id="moonImage" width="45" height="45" alt="月の画像" /></td>
+				</tr>
+			</table>
+		</center>
+	</body>
 </html>
