@@ -1,4 +1,4 @@
 # website
 https://rei00c.github.io
 
-零のリンクまとめ
+零のSNSリンクまとめ
