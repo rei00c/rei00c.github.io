@@ -1,5 +1,15 @@
 // 配列を用意する
-var data = ['山田太郎', '田中さち子', '佐藤花子'];
-for(var item in data){
-    document.write('<p>' + data[item] + 'さん。</p>');
+var data = new Array();
+// 値を収めていく
+data['name'] = '山田太郎';
+data['mail'] = 'taro@yamada';
+data['tel'] = '090-1234-5678';
+// 関数を作成する
+data['print'] = function(){
+    var result = '<p>' + data['name'] + '</p>';
+    result += '<p>' + data['mail'] + '</p>';
+    result += '<p>' + data['tel'] + '</p>';
+    document.write(result);
 }
+// 処理を実行する
+data['print']();
