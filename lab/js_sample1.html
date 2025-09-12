@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sample</title>
+    <style>
+      h1 {font-size: 24px; font-weight: bold;
+          color: #999; padding: 3px; }
+      body {font-size:14pt; color: #666; }
+    </style>
+		<script src="./js/sample1.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
+	</head>
+
+	<body onload="init();">
+		<header>
+			<h1>Hello!</h1>
+		</header>
+		<main>
+			<p id="msg"></p>
+			<table>
+				<tr><th>TITLE</th>
+			<td><input type="text" id="title" /></td></tr>
+			<tr><th>CONTENT</th>
+			<td><textarea id="content" cols="40" rows="5"></textarea></td></tr>
+			<tr><th></th><td>
+				<button onclick="clickBtn();">Click</button></td></tr>
+			</table>
+		</main>
+		<footer>
+			<p>&copy; 2025 ZeroFactory</p>
+		</footer>
+	</body>
+</html>
