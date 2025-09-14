@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sample</title>
+    <style>
+      h1 {font-size: 24px; font-weight: bold;
+          color: #999; padding: 3px; }
+      body {font-size:14pt; color: #666; }
+    </style>
+		<script src="./js/sample2.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
+	</head>
+
+	<body onload="init();">
+		<header>
+			<h1>Calculator!</h1>
+			<div><select id="menu" onchange="doChangeForm(event);"></select></div>
+			<hr>
+		</header>
+		<main>
+			<p id="msg"></p>
+			<table id="form"></table>
+			<input type="hidden" id="hidden">
+			<button id="button">Click</button>
+		</main>
+		<footer>
+			<p>&copy; 2025 ZeroFactory</p>
+		</footer>
+	</body>
+</html>
