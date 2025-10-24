@@ -25,8 +25,11 @@
 		<main>
 			<h2>Windows10のサポート終了は2025年10月14日</h2>
 			<p id="daysLeft"></p>
+			<h2>延長セキュリティ更新プログラムは2026年10月13日</h2>
+			<p id="daysLeftESU"></p>
 			<script>
-				document.getElementById('daysLeft').innerHTML = `サポート終了まであと${daysLeft}日です。`;
+				document.getElementById('daysLeft').innerHTML = `サポート終了 ${daysLeft}日`;
+				document.getElementById('daysLeftESU').innerHTML = `ESU終了まで ${daysLeftESU}日`;
 			</script>
 		</main>
 		<footer>
