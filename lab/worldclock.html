@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<title>World Clock</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
-		<style>
-			.clock {
-				display: inline-block;
-				margin: 10px;
-				padding: 10px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				text-align: center;
-				text-transform: capitalize;
-			}
-		</style>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
 
-			gtag('config', 'G-H6P772P58X');
-		</script>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<title>World Clock</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+	<style>
+		.clock {
+			display: inline-block;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	</style>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P772P58X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-	<body>
-		<header>
-			<h1>World Clock</h1>
-		</header>
-		<main>
-			<div class="clock" id="vancouver"></div>
-			<div class="clock" id="newyork"></div>
-			<div class="clock" id="london"></div>
-			<div class="clock" id="tokyo"></div>
+		gtag('config', 'G-H6P772P58X');
+	</script>
+</head>
 
-			<script src="./js/worldclock.js"></script>
-		</main>
-		<footer>
-			<p>&copy; 2025 ZeroFactory</p>
-		</footer>
-	</body>
+<body>
+	<header>
+		<h1>World Clock</h1>
+	</header>
+	<main>
+		<div class="clock" id="vancouver"></div>
+		<div class="clock" id="newyork"></div>
+		<div class="clock" id="london"></div>
+		<div class="clock" id="tokyo"></div>
+
+		<script src="./js/worldclock.js"></script>
+	</main>
+	<footer>
+		<p>&copy; 2026 ZeroFactory</p>
+	</footer>
+</body>
+
 </html>
