@@ -72,7 +72,7 @@ table td:nth-child(2) {
 
 table th:nth-child(3),
 table td:nth-child(3) {
-  width: 80px;
+  width: 77px;
   /* text-align: center; */
 }
 
@@ -84,7 +84,7 @@ ion-icon {
 }
 
 .sns-logo-x {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .material-icons {
